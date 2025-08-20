@@ -90,7 +90,22 @@ main {
 }
 
 .storage {
+  position: relative;
   padding: 9.17%;
   color: var(--blue-200);
+  border-radius: 0.625rem;
+}
+.storage__remaining {
+  position: absolute;
+  bottom: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 74px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: var(--blue-950);
   border-radius: 0.625rem;
 }/*# sourceMappingURL=styles.css.map */
