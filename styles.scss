@@ -69,6 +69,36 @@ main {
 .header {
     padding: 12.5%;
     border-radius: 0.625rem 6.25rem 0.625rem 0.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__logo {
+        width: 55%;
+    }
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.9375rem;
+    justify-content: start;
+    align-items: center;
+
+    &__link {
+        width: 19.98%;
+        aspect-ratio: 1 / 1;
+
+        background-color: var(--blue-950);
+        border-radius: 0.625rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+    }
 }
 
 .storage {
