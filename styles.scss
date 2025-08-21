@@ -32,19 +32,8 @@ body {
     font-weight: 400;
     font-family: Raleway, sans-serif;
 
-    background-image: url(../images/bg-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-
-    padding: 0 1.5rem;
-
-    @media only screen and (min-width: 62.5rem) {
-        background-image: url(../images/bg-desktop.png);
-        background-size: auto;
-        background-position: bottom;
-        background-color: var(--blue-950);
-    }
+    // min-height: 100vh;
+    background-color: var(--blue-950);
 }
 
 .attribution {
@@ -63,6 +52,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0 1.5rem;
+
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 62.5rem) {
+        background-image: url(../images/bg-desktop.png);
+        background-size: 100% 52.6%;
+        background-position: bottom;
+
+    }
 }
 
 .grid-container {
@@ -99,6 +101,10 @@ main {
 
     &__logo {
         width: 8.625rem;
+    }
+
+    @media only screen and (min-width: 62.5rem) {
+        height: 12.625rem;
     }
 }
 
@@ -204,6 +210,10 @@ main {
 
         max-width: 20rem;
         margin-inline: auto;
+    }
+
+    @media only screen and (min-width: 62.5rem) {
+        height: 9.625rem;
     }
 }
 
