@@ -128,6 +128,12 @@ main {
   color: var(--blue-200);
   border-radius: 0.625rem;
 }
+@media only screen and (min-width: 62.5rem) {
+  .storage {
+    height: 9.625rem;
+    padding: 7.4%;
+  }
+}
 .storage__remaining {
   position: absolute;
   bottom: -22.98%;
@@ -144,6 +150,17 @@ main {
   font-weight: 700;
   font-size: 2.3rem;
 }
+@media only screen and (min-width: 62.5rem) {
+  .storage__remaining {
+    width: 33.3%;
+    border-radius: 0.625rem 0.625rem 0;
+    bottom: auto;
+    top: -2.9375rem;
+    left: auto;
+    right: 2.5rem;
+    transform: none;
+  }
+}
 .storage__remaining--not-bold {
   font-size: 0.8rem;
   color: var(--grayish-blue);
@@ -155,14 +172,19 @@ main {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -2.75rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
-  border-left: 1.375rem solid transparent;
-  border-bottom: 1.375rem solid transparent;
-  border-top: 1.375rem solid white;
-  border-right: 1.375rem solid white;
+  border-left: 0.6875rem solid transparent;
+  border-bottom: 0.6875rem solid transparent;
+  border-top: 0.6875rem solid white;
+  border-right: 0.6875rem solid white;
   display: none;
+}
+@media only screen and (min-width: 62.5rem) {
+  .storage .storage__remaining::after {
+    display: block;
+  }
 }
 .storage__text {
   text-align: center;
@@ -181,11 +203,6 @@ main {
   font-weight: 600;
   max-width: 20rem;
   margin-inline: auto;
-}
-@media only screen and (min-width: 62.5rem) {
-  .storage {
-    height: 9.625rem;
-  }
 }
 
 .progress-bar {
