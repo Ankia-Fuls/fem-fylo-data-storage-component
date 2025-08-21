@@ -191,6 +191,12 @@ main {
   letter-spacing: 0.0625rem;
   font-weight: 400;
 }
+@media only screen and (min-width: 62.5rem) {
+  .storage__text {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+}
 .storage__text--bold {
   font-weight: 700;
 }
@@ -204,6 +210,11 @@ main {
   max-width: 20rem;
   margin-inline: auto;
 }
+@media only screen and (min-width: 62.5rem) {
+  .storage__values {
+    max-width: none;
+  }
+}
 
 .progress-bar {
   margin-top: 0.9375rem;
@@ -215,6 +226,11 @@ main {
   border-radius: 1.25rem;
   border: 0.1875rem solid var(--blue-background);
   overflow: hidden;
+}
+@media only screen and (min-width: 62.5rem) {
+  .progress-bar {
+    max-width: none;
+  }
 }
 .progress-bar__color {
   width: 73.77%;
