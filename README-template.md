@@ -80,6 +80,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [How to center a relative element](https://stackoverflow.com/questions/6626314/center-an-item-with-position-relative) - This helped to show me how to center an element that has been set as absolute to the center of the relative element.
+- [How to create a triangle in CSS](https://css-tricks.com/snippets/css/css-triangle/) - This helped me understand how to use borders to create triangles in CSS.
 
 ## Author
 
