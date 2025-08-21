@@ -33,6 +33,14 @@ body {
   min-height: 100vh;
   padding: 0 1.5rem;
 }
+@media only screen and (min-width: 62.5rem) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-size: auto;
+    background-position: bottom;
+    background-color: var(--blue-950);
+  }
+}
 
 .attribution {
   padding: 1rem;
@@ -64,6 +72,15 @@ main {
 .grid-container__block {
   width: 100%;
   background-color: var(--blue-850);
+}
+@media only screen and (min-width: 62.5rem) {
+  .grid-container {
+    grid-template-columns: 21.875rem 33.75rem;
+    grid-template-rows: 1fr;
+    gap: 1.875rem;
+    max-width: fit-content;
+    align-items: end;
+  }
 }
 
 .header {
